@@ -1,1 +1,1 @@
-# c-pointers
+# C pointers
