@@ -1,4 +1,5 @@
 #include <iostream>
+#include "array.hpp"
 #include "simple.hpp"
 
 using namespace std;
@@ -9,4 +10,5 @@ int main ()
 	cout << "==========================\n\n";
 
 	simple();
+	array();
 }

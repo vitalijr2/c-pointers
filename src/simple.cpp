@@ -12,24 +12,23 @@ void simple()
 	cout << "----------------\n";
 
 	cout << "\nInitial values:"
-		<< "\n\ta = " << a
-		<< "\n\tb = " << b
-		<< "\n\tc = " << *c
-		<< '\n';
+	<< "\n\ta = " << a
+	<< "\n\tb = " << b
+	<< "\n\tc = " << *c
+	<< '\n';
 
 	a++;
 	b--;
 	cout << "\nIncrement a and decrement b"
-		<< "\n\ta = " << a
-		<< "\n\tb = " << b
-		<< "\n\tc = " << *c
-		<< '\n';
+	<< "\n\ta = " << a
+	<< "\n\tb = " << b
+	<< "\n\tc = " << *c
+	<< '\n';
 
-	
 	(*c)++;
-	cout << "\nIncrement c"
-		<< "\n\ta = " << a
-		<< "\n\tb = " << b
-		<< "\n\tc = " << *c
-		<< '\n';
+	cout << "\nIncrement value of c"
+	<< "\n\ta = " << a
+	<< "\n\tb = " << b
+	<< "\n\tc = " << *c
+	<< '\n';
 }
