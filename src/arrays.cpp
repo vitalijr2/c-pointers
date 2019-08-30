@@ -8,8 +8,8 @@ void arrays()
 	int b = a[1];
 	int* c = a;
 
-	cout << "Arrays\n";
-	cout << "------\n";
+	cout << "\nArrays";
+	cout << "\n------\n";
 
 	cout << "\nInitial values:"
 	<< "\n\ta = {";

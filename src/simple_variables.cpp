@@ -8,8 +8,8 @@ void simple_variables()
 	int b = a;
 	int* c = &a;
 
-	cout << "Simple variables\n";
-	cout << "----------------\n";
+	cout << "\nSimple variables";
+	cout << "\n----------------\n";
 
 	cout << "\nInitial values:"
 	<< "\n\ta = " << a

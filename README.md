@@ -10,6 +10,7 @@ Should print next lines
 Hello world of C pointers!
 ==========================
 
+
 Simple variables
 ----------------
 
@@ -27,6 +28,7 @@ Increment value of c
 	a = 3
 	b = 0
 	c = 3
+
 Arrays
 ------
 
@@ -49,6 +51,7 @@ Increment value of c
 	a = { 1 4 3 4 5 }
 	b = 1
 	c = 4
+
 Strings
 -------
 

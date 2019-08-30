@@ -8,8 +8,8 @@ void strings()
 	char b = a[16];
 	char* c = a;
 
-	cout << "Strings\n";
-	cout << "-------\n";
+	cout << "\nStrings";
+	cout << "\n-------\n";
 
 	cout << "\nInitial values:"
 	<< "\n\ta = \"" << a << '"'
