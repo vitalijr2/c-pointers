@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void array()
+void arrays()
 {
 	int a[] = { 1, 2, 3, 4, 5};
 	int b = a[1];

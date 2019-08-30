@@ -1,6 +1,7 @@
 #include <iostream>
-#include "array.hpp"
-#include "simple.hpp"
+#include "arrays.hpp"
+#include "simple_variables.hpp"
+#include "strings.hpp"
 
 using namespace std;
 
@@ -9,6 +10,7 @@ int main ()
 	cout << "Hello world of C pointers!\n";
 	cout << "==========================\n\n";
 
-	simple();
-	array();
+	simple_variables();
+	arrays();
+	strings();
 }

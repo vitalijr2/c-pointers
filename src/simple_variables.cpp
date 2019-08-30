@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void simple()
+void simple_variables()
 {
 	int a = 1;
 	int b = a;
