@@ -11,7 +11,7 @@ void functions()
 	char qwerty_string[] = "abc qwerty";
 
 	cout << "\nFunctions";
-	cout << "\n------\n";
+	cout << "\n---------\n";
 
 	int latin_letter_counter, consonant_counter = -1, vowel_counter = -1;
 
@@ -44,7 +44,7 @@ void functions()
 	<< '\n';
 }
 
-int latin_letter_counter_parameters_by_value(char* string, int consonant_counter, int vowel_counter)
+int latin_letter_counter_parameters_by_value(char* string, int consonant_counter_by_value, int vowel_counter_by_value)
 {
 	char* character_pointer = string;
 	char character;
@@ -52,9 +52,12 @@ int latin_letter_counter_parameters_by_value(char* string, int consonant_counter
 	int latin_letter_counter;
 
 	latin_letter_counter = 0;
-	consonant_counter = 0;
-	vowel_counter = 0;
+	consonant_counter_by_value = 0;
+	vowel_counter_by_value = 0;
 	character = *character_pointer;
+
+	cout << "\nParamerets are passed by value"
+	<< "\n------------------------------\n";
 
 	while (character)
 	{
@@ -65,11 +68,11 @@ int latin_letter_counter_parameters_by_value(char* string, int consonant_counter
 			if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u'
 			        || character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U')
 			{
-				cout << "\n\tnew vowel, total " << ++vowel_counter;
+				cout << "\n\tnew vowel, total " << ++vowel_counter_by_value;
 			}
 			else
 			{
-				cout << "\n\tnew consonant, total " << ++consonant_counter;
+				cout << "\n\tnew consonant, total " << ++consonant_counter_by_value;
 			}
 		}
 		character = *++character_pointer;
@@ -78,7 +81,7 @@ int latin_letter_counter_parameters_by_value(char* string, int consonant_counter
 	return latin_letter_counter;
 }
 
-int latin_letter_counter_parameters_by_reference(char* string, int& consonant_counter, int& vowel_counter)
+int latin_letter_counter_parameters_by_reference(char* string, int& consonant_counter_by_reference, int& vowel_counter_by_reference)
 {
 	char* character_pointer = string;
 	char character;
@@ -86,9 +89,12 @@ int latin_letter_counter_parameters_by_reference(char* string, int& consonant_co
 	int latin_letter_counter;
 
 	latin_letter_counter = 0;
-	consonant_counter = 0;
-	vowel_counter = 0;
+	consonant_counter_by_reference = 0;
+	vowel_counter_by_reference = 0;
 	character = *character_pointer;
+
+	cout << "\nParamerets are passed by reference"
+	<< "\n----------------------------------\n";
 
 	while (character)
 	{
@@ -99,11 +105,11 @@ int latin_letter_counter_parameters_by_reference(char* string, int& consonant_co
 			if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u'
 			        || character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U')
 			{
-				cout << "\n\tnew vowel, total " << ++vowel_counter;
+				cout << "\n\tnew vowel, total " << ++vowel_counter_by_reference;
 			}
 			else
 			{
-				cout << "\n\tnew consonant, total " << ++consonant_counter;
+				cout << "\n\tnew consonant, total " << ++consonant_counter_by_reference;
 			}
 		}
 		character = *++character_pointer;
@@ -112,7 +118,7 @@ int latin_letter_counter_parameters_by_reference(char* string, int& consonant_co
 	return latin_letter_counter;
 }
 
-int latin_letter_counter_parameters_by_pointer(char* string, int* consonant_counter, int* vowel_counter)
+int latin_letter_counter_parameters_by_pointer(char* string, int* consonant_counter_by_pointer, int* vowel_counter_by_pointer)
 {
 	char* character_pointer = string;
 	char character;
@@ -120,9 +126,12 @@ int latin_letter_counter_parameters_by_pointer(char* string, int* consonant_coun
 	int latin_letter_counter;
 
 	latin_letter_counter = 0;
-	*consonant_counter = 0;
-	*vowel_counter = 0;
+	*consonant_counter_by_pointer = 0;
+	*vowel_counter_by_pointer = 0;
 	character = *character_pointer;
+
+	cout << "\nParamerets are passed by pointer"
+	<< "\n--------------------------------\n";
 
 	while (character)
 	{
@@ -133,12 +142,15 @@ int latin_letter_counter_parameters_by_pointer(char* string, int* consonant_coun
 			if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u'
 			        || character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U')
 			{
-				cout << "\n\tnew vowel, total " << ++(*vowel_counter);
+				cout << "\n\tnew vowel, total " << ++(*vowel_counter_by_pointer);
 			}
 			else
 			{
-				cout << "\n\tnew consonant, total " << ++*consonant_counter;
-				// order does matter: increment of consonant_counter works the same as for vowel_counter but another as for character_pointer down bellow
+				cout << "\n\tnew consonant, total " << ++*consonant_counter_by_pointer;
+				// Order does matter!
+				// Increment of consonant_counter_by_pointer works the same
+				// as for vowel_counter_by_pointer
+				// but another as for character_pointer down bellow.
 			}
 		}
 		character = *++character_pointer;
