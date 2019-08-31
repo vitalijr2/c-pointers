@@ -2,6 +2,7 @@
 #include "arrays.hpp"
 #include "simple_variables.hpp"
 #include "strings.hpp"
+#include "functions.hpp"
 
 using namespace std;
 
@@ -13,4 +14,5 @@ int main ()
 	simple_variables();
 	arrays();
 	strings();
+	functions();
 }

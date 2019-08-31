@@ -74,4 +74,82 @@ Replace eigth word by c
 	a = "The quick brown cat jumps over the blue dog"
 	b = +
 	c = e
+
+Functions
+------
+
+	new latin letter, total 1
+	new vowel, total 1
+	new latin letter, total 2
+	new consonant, total 1
+	new latin letter, total 3
+	new consonant, total 2
+	new latin letter, total 4
+	new consonant, total 3
+	new latin letter, total 5
+	new consonant, total 4
+	new latin letter, total 6
+	new vowel, total 2
+	new latin letter, total 7
+	new consonant, total 5
+	new latin letter, total 8
+	new consonant, total 6
+	new latin letter, total 9
+	new consonant, total 7
+
+Total when pass counters by value:
+
+	latin letters: 9
+	consonants: -1
+	vowels: -1
+
+	new latin letter, total 1
+	new vowel, total 1
+	new latin letter, total 2
+	new consonant, total 1
+	new latin letter, total 3
+	new consonant, total 2
+	new latin letter, total 4
+	new consonant, total 3
+	new latin letter, total 5
+	new consonant, total 4
+	new latin letter, total 6
+	new vowel, total 2
+	new latin letter, total 7
+	new consonant, total 5
+	new latin letter, total 8
+	new consonant, total 6
+	new latin letter, total 9
+	new consonant, total 7
+
+Total when pass counters by reference:
+
+	latin letters: 9
+	consonants: 7
+	vowels: 2
+
+	new latin letter, total 1
+	new vowel, total 1
+	new latin letter, total 2
+	new consonant, total 1
+	new latin letter, total 3
+	new consonant, total 2
+	new latin letter, total 4
+	new consonant, total 3
+	new latin letter, total 5
+	new consonant, total 4
+	new latin letter, total 6
+	new vowel, total 2
+	new latin letter, total 7
+	new consonant, total 5
+	new latin letter, total 8
+	new consonant, total 6
+	new latin letter, total 9
+	new consonant, total 7
+
+Total when pass counters by pointer:
+
+	latin letters: 9
+	consonants: 7
+	vowels: 2
 ```
