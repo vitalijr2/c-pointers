@@ -3,6 +3,7 @@
 * Simple variables
 * Arrays
 * Strings
+* Functions: parameters are passed by value, by reference and as pointers
 
 Should print next lines
 
